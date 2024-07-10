@@ -1,0 +1,193 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#root {
+  padding: 0;
+  margin: 0;
+}
+
+.navbar ul li a.active {
+  background-color: #4A503D; /* Warna latar belakang untuk item aktif */
+  color: gold; /* Warna teks untuk item aktif */
+}
+.container {
+  width: 100%;
+  height: fit-content;
+  margin: 0 auto;
+}
+
+.heading {
+  padding-top: 2rem;
+  color: whitesmoke;
+  font-weight: bold;
+  font-size: 1rem;
+  text-align: center;
+  color: gold;
+  @apply md:text-2xl xl:text-3xl;
+}
+
+.swiper_container {
+  height: 37rem;
+  padding: 2rem 0;
+  position: relative;
+  @apply md:h-[60rem] xl:h-[48rem];
+}
+
+.swiper-slide {
+  width: 20rem;
+  height: 27rem;
+  position: relative;
+  @apply md:h-[50rem] md:w-[35rem] xl:h-[40rem] xl:w-[30rem];
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  border-radius: 2rem;
+  object-fit: cover;
+}
+
+.swiper-slide-shadow-left,
+.swiper-slide-shadow-right {
+  display: none;
+}
+
+.slider-controler {
+  position: absolute;
+  bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+/* .swiper-slide-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 2rem;
+  object-fit: cover;
+} */
+
+/* .slider-controler .swiper-button-prev,
+.slider-controler .swiper-button-next {
+  background: white;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  display: flex;  
+  align-items: center;
+  justify-content: center;
+  
+} */
+
+/* .slider-controler .swiper-button-prev {
+  margin-right: 1rem;
+}
+
+.slider-controler .swiper-button-next {
+  margin-left: 1rem;
+}
+
+.slider-controler .swiper-button-prev::after,
+.slider-controler .swiper-button-next::after {
+  font-size: 2rem;
+  color: #222224;
+} */
+
+
+.swiper-pagination {
+  /* background-color: #254336; */
+  position: absolute;
+  bottom: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+  width: 1rem;
+  height: 1rem;
+  background: #DAD3BE;
+  border-radius: 50%;
+  opacity: 1;
+  filter: drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.1));
+  transition: width 0.1s, background-color 0.1s, transform 0.3s;
+}
+
+.swiper-pagination .swiper-pagination-bullet-active {
+  width: 50px;
+  border-radius: 15px;
+  background: #254336;
+  transform: scale(1);
+}
+
+
+/* :root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+} */
