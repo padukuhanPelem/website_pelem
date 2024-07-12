@@ -7,16 +7,16 @@ import CardGrid from '../components/card'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCoffee, faAppleAlt, faCheckCircle } from '@fortawesome/free-solid-svg-icons';
 import test from '../assets/videos/test.mp4'
-import jett from '../assets/videos/jett.mp4'
 import maps from '../assets/images/maps.jpg'
 import Maps from '../components/maps'
 import expoFix from '../assets/videos/expoFix.mp4'
 import atma from '../assets/videos/atma.mp4'
+import peta from '../assets/images/PETA.png'
 const LandingPage  = () => {
     return (
         <div className='relative w-full h-full'>
             <Navbar />
-                <VideoCard src={jett} type='video' backgroundVideo={atma} heading={'VIDEO PROFILE PADUKUAN PELEM'} style={{color: '#FF8C00'}}/>
+                <VideoCard src={test} type='video' backgroundVideo={atma} heading={'VIDEO PROFILE PADUKUAN PELEM'} style={{color: '#FF8C00'}}/>
                 <br />
                 <div className='relative w-full h-[134rem] md:h-[72rem] xl:h-[56rem] flex-col align-middle justify-center pb-10 xl:py-24 bg-black bg-opacity-50'>
                     <video
@@ -63,7 +63,7 @@ const LandingPage  = () => {
                     </div>
                 </div>
                 <br/>
-                <VideoCard type='foto' src={maps} backgroundVideo={expoFix} heading={'PETA POTENSI TANAH PADUKUAN PELEM'} style={{color: '#DAD3BE'}}/>
+                <VideoCard type='foto' src={peta} backgroundVideo={expoFix} heading={'PETA POTENSI TANAH PADUKUAN PELEM'} style={{color: '#DAD3BE'}}/>
         </div>
     );
 }

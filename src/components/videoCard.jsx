@@ -58,7 +58,7 @@ const VideoCard = ({ src, type, heading, backgroundVideo, ...props }) => {
           initial={{ x: -200, opacity: 0 }}
           animate={hasAnimated ? { x: 0, opacity: 1 } : {}}
           transition={{ duration: 1 }}
-          className="text-xl text-center font-bold py-5 md:text-2xl xl:text-3xl"
+          className="text-lg text-center font-bold py-5 md:text-2xl xl:text-3xl"
           {...props}
         >
           {heading}
@@ -67,7 +67,7 @@ const VideoCard = ({ src, type, heading, backgroundVideo, ...props }) => {
           {type === 'video' ? (
             <video src={src} type="video/mp4" controls autoPlay className="w-[22rem] h-auto rounded-xl md:w-[46rem] xl:w-3/4"></video>
           ) : (
-            <img src={src} alt="Media" className="w-[22rem] h-[12rem] rounded-xl md:w-[46rem] md:h-[24rem] xl:w-3/5 xl:h-[36rem]" />
+            <img src={src} alt="Media" className="w-[22rem] h-[14rem] rounded-xl md:w-[46rem] md:h-[24rem] xl:w-3/5 xl:h-[36rem]" />
           )}
         </div>
       </motion.div>
