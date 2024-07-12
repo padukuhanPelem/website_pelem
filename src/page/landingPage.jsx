@@ -16,7 +16,7 @@ const LandingPage  = () => {
     return (
         <div className='relative w-full h-full'>
             <Navbar />
-                <VideoCard src={test} type='video' backgroundVideo={atma} heading={'VIDEO PROFILE PADUKUAN PELEM'} style={{color: '#FF8C00'}}/>
+                <VideoCard src={expoFix} type='video' backgroundVideo={atma} heading={'VIDEO PROFILE PADUKUAN PELEM'} style={{color: '#FF8C00'}}/>
                 <br />
                 <div className='relative w-full h-[134rem] md:h-[72rem] xl:h-[56rem] flex-col align-middle justify-center pb-10 xl:py-24 bg-black bg-opacity-50'>
                     <video
