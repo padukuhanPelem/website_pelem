@@ -1,6 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCoffee, faAppleAlt, faCheckCircle } from '@fortawesome/free-solid-svg-icons';
+import { faCoffee, faAppleAlt, faCheckCircle, faMapLocationDot, faLandmark, faSeedling , faFaceSmile} from '@fortawesome/free-solid-svg-icons';
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
@@ -19,11 +19,11 @@ const containerVariants = {
   },
 };
 
-function Card({ src }) {
+function Card({ src, isi}) {
   const controls = useAnimation();
   const [ref, inView] = useInView({
     triggerOnce: true, // Animates only once when in view
-    threshold: 0.1, // Trigger when 10% of the card is visible
+    threshold: 0.4, // Trigger when 10% of the card is visible
   });
 
   React.useEffect(() => {
@@ -40,12 +40,12 @@ function Card({ src }) {
       initial="hidden"
       animate={controls}
     >
-      <div className="w-[21rem] h-64 px-6 bg-secondary flex flex-col items-center justify-center text-center rounded-xl xl:w-[18rem]">
-        <FontAwesomeIcon icon={src} size="2x" className="text-primary" />
+      <div className="w-[21rem] h-[28rem] px-6 bg-secondary flex flex-col items-center justify-top text-center rounded-xl xl:w-[18rem] xl:h-[34rem]">
+        <FontAwesomeIcon icon={src} size="2x" className="text-primary mt-10" />
         <br />
         <div>
           <h1 className="text-fourth">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+           {isi}
           </h1>
         </div>
       </div>
@@ -61,10 +61,11 @@ function CardGrid() {
       initial="hidden"
       animate="visible"
     >
-      <Card src={faCoffee} />
-      <Card src={faAppleAlt} />
-      <Card src={faCheckCircle} />
-      <Card src={faAppleAlt} />
+      <Card src={faMapLocationDot} isi={'Dusun Pelem merupakan salah satu dusun yang terletak di Desa Jepitu, kapanewon Girisubo, Kabupaten Gunungkidul, Daerah Istimewa Yogyakarta, Indonesia. Dusun ini terkenal dengan keindahan alamnya yang mempesona dan komunitas yang ramah. Keberadaan dusun ini memainkan peran penting dalam menjaga tradisi dan budaya lokal yang telah diwariskan dari generasi ke generasi.'}/>
+      <Card src={faLandmark} isi={'Dusun Pelem memiliki kurang lebih 70 kartu keluarga yang tersebar di empat Rukun Tetangga (RT) dan satu Rukun Warga (RW). Struktur sosial di dusun ini sangat terorganisir dengan baik, memungkinkan warga untuk bekerja sama dalam berbagai kegiatan dan menjaga keharmonisan lingkungan. Setiap keluarga di dusun ini saling mengenal dan mendukung satu sama lain dalam berbagai aspek kehidupan sehari-hari.'}/>
+      <Card src={faSeedling} isi={'Rata-rata mata pencaharian warga Dusun Pelem adalah bertani dan beternak. Pertanian menjadi tulang punggung perekonomian dusun ini, dengan berbagai jenis tanaman pangan yang ditanam, termasuk padi, jagung, dan sayur-sayuran. Selain itu, banyak warga yang memelihara ternak seperti sapi, kambing, dan unggas. Kehidupan agraris ini mencerminkan kearifan lokal dan ketergantungan masyarakat pada alam.'}/>
+      <Card src={faFaceSmile} isi={'Warga Dusun Pelem sangat menjunjung tinggi budaya sopan santun, saling menyapa, dan gotong royong. Nilai-nilai ini tercermin dalam interaksi sehari-hari, di mana setiap orang saling menghormati dan membantu satu sama lain. Gotong royong menjadi inti dari kehidupan sosial di dusun ini, baik dalam kegiatan rutin seperti membersihkan lingkungan maupun dalam perayaan tradisional. Kebersamaan dan kekompakan warga menjadi salah satu kekuatan utama dalam menghadapi berbagai tantangan.'}/>
+
     </motion.div>
   );
 }
