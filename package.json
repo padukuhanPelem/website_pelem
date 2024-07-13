@@ -4,8 +4,10 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "preinstall": "git lfs install",
+    "install": "yarn install",
     "dev": "vite",
-    "build": "vite build",
+    "build": "yarn build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
