@@ -7,7 +7,6 @@ import CardGrid from '../components/card'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCoffee, faAppleAlt, faCheckCircle } from '@fortawesome/free-solid-svg-icons';
 import test from '../assets/videos/test.mp4'
-import jett from '../assets/videos/jett.mp4'
 import maps from '../assets/images/maps.jpg'
 import Maps from '../components/maps'
 import expoFix from '../assets/videos/expoFix.mp4'
@@ -16,11 +15,7 @@ const LandingPage  = () => {
     return (
         <div className='relative w-full h-full'>
             <Navbar />
-<<<<<<< HEAD
                 <VideoCard src={atma} type='video' backgroundVideo={expoFix} heading={'VIDEO PROFILE PADUKUAN PELEM'} style={{color: '#FF8C00'}}/>
-=======
-                <VideoCard src={jett} type='video' backgroundVideo={atma} heading={'VIDEO PROFILE PADUKUAN PELEM'} style={{color: '#FF8C00'}}/>
->>>>>>> parent of 19bb5cc (logo)
                 <br />
                 <div className='relative w-full h-[134rem] md:h-[72rem] xl:h-[56rem] flex-col align-middle justify-center pb-10 xl:py-24 bg-black bg-opacity-50'>
                     <video
