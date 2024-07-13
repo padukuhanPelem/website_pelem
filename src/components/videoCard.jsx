@@ -64,7 +64,7 @@ const VideoCard = ({ src, type, heading, backgroundVideo, ...props }) => {
           {heading}
         </motion.h1>
         <div className="w-full h-fit flex items-center justify-center rounded-xl">
-          {type === 'video' ? (
+          {type === 'video' ? ( 
             <video src={src} type="video/mp4" controls autoPlay className="w-[22rem] h-auto rounded-xl md:w-[46rem] xl:w-3/4"></video>
           ) : (
             <img src={src} alt="Media" className="w-[22rem] h-[14rem] rounded-xl md:w-[46rem] md:h-[24rem] xl:w-3/5 xl:h-[36rem]" />
