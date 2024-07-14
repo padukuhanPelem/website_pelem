@@ -46,6 +46,7 @@ const VideoCard = ({ src, type, heading, backgroundVideo, ...props }) => {
           autoPlay
           loop
           muted
+          playsInline
           className="absolute top-0 left-0 w-full h-full object-cover z-[-1]"
         >
           <source src={backgroundVideo} type="video/mp4" />
