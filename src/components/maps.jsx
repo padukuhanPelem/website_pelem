@@ -38,7 +38,7 @@ const Maps = ({ src, head, desc }) => {
   return (
     <motion.div
       ref={ref}
-      className='w-full h-full p-4 flex justify-center items-center lg:grid lg:grid-rows-2 lg:h-[32rem]'
+      className='w-full h-full p-4 flex justify-center items-center xl:grid xl:grid-rows-2 lg:h-[16rem] xl:h-[32rem]'
       variants={containerVariants}
       initial="hidden"
       animate={controls}
@@ -49,7 +49,7 @@ const Maps = ({ src, head, desc }) => {
         width="150"
         height="150"
         style={{ border: 0 }}
-        allowFullScreen=""
+        allowFullScreen=""  
         loading="lazy"
         referrerPolicy="no-referrer-when-downgrade"
         variants={mapVariants}
