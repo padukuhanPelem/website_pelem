@@ -58,8 +58,6 @@ const LandingPage  = () => {
                             head ={'BIYYU GILING TEPUNG BERAS & JAGUNG'} desc={'Merupakan salah satu UMKM pembuatan tepung beras dan jagung di desa Pelem'}/>
                             <Maps src='https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d987.375073573984!2d110.7112472!3d-8.1522427!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7bb9003e9f8989%3A0x493d0047f011c7a3!2sTempe%20Dangsul%2C%20Pelem%2C%20Jepitu!5e0!3m2!1sid!2sid!4v1720316969527!5m2!1sid!2sid' 
                             head={'TEMPE DANGSUL'} desc={'Merupakan salah satu UMKM pembuatan tempe di desa Pelem'}/>
-                            <Maps src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.519572119302!2d110.7114201!3d-8.150290199999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7bb900577d189b%3A0xafd979612f5d759c!2sBiyyu%20Giling%20Tepung%20Beras%20%26%20Jagung!5e0!3m2!1sid!2sid!4v1720320108904!5m2!1sid!2sid' 
-                            head ={'BIYYU GILING TEPUNG BERAS & JAGUNG'} desc={'Merupakan salah satu UMKM pembuatan tepung beras dan jagung di desa Pelem'}/>
                         </div>
                     </div>
                 </div>
