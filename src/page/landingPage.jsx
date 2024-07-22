@@ -11,7 +11,6 @@ import maps from '../assets/images/maps.jpg'
 import Maps from '../components/maps'
 import expoFix from '../assets/videos/expoFix.mp4'
 import atma from '../assets/videos/atma.mp4'
-import profile from '../assets/videos/Company Profile Dusun Pelem.mp4'
 const LandingPage  = () => {
     return (
         <div className='relative w-full h-full'>
