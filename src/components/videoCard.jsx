@@ -66,13 +66,26 @@ const VideoCard = ({ src, type, heading, backgroundVideo, ...props }) => {
         </motion.h1>
         <div className="w-full h-fit flex items-center justify-center rounded-xl">
           {type === 'video' ? ( 
-            <video src={src} type="video/mp4" controls autoPlay className="w-[22rem] h-auto rounded-xl md:w-[46rem] xl:w-3/4"></video>
+            
+            <div className="w-[22rem] h-[13rem] rounded-xl md:h-[26rem] md:w-[46rem] xl:w-3/4 xl:h-[38rem]">
+              <iframe width="100%" height="100%" 
+                src={src} 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" 
+                allowfullscreen>
+              </iframe>
+            </div>
+
+            
           ) : (
             <img src={src} alt="Media" className="w-[22rem] h-[12rem] rounded-xl md:w-[46rem] md:h-[24rem] xl:w-3/5 xl:h-[36rem]" />
           )}
         </div>
       </motion.div>
     </motion.div>
+    
   );
 };
 
