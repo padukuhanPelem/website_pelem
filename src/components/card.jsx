@@ -40,7 +40,7 @@ function Card({ src, isi}) {
       initial="hidden"
       animate={controls}
     >
-      <div className="w-[21rem] h-[28rem] px-6 bg-secondary flex flex-col items-center justify-top text-center rounded-xl xl:w-[18rem] xl:h-[34rem]">
+      <div className="w-[21rem] h-[29rem] px-6 bg-secondary flex flex-col items-center justify-top text-center rounded-xl xl:w-[18rem] xl:h-[34rem]">
         <FontAwesomeIcon icon={src} size="2x" className="text-primary mt-10" />
         <br />
         <div>

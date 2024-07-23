@@ -35,7 +35,7 @@ const VideoCard = ({ src, type, heading, backgroundVideo, ...props }) => {
   return (
     <motion.div
       ref={ref}
-      className="relative w-full h-[21rem] md:h-[36rem] xl:h-screen flex flex-col items-center justify-center bg-black bg-opacity-50"
+      className="relative w-full h-fit pb-5 md:h-fit xl:h-fit flex flex-col items-center justify-center bg-black bg-opacity-50"
       variants={containerVariants}
       initial="hidden"
       animate={controls}
@@ -79,6 +79,8 @@ const VideoCard = ({ src, type, heading, backgroundVideo, ...props }) => {
             </div>
 
             
+          ) : type === 'vertical' ? (
+            <img src={src} alt="Media" className="w-[24rem] h-[32rem] rounded-xl md:w-[36rem] md:h-[46rem] xl:w-2/5 xl:h-[52rem]" />
           ) : (
             <img src={src} alt="Media" className="w-[22rem] h-[12rem] rounded-xl md:w-[46rem] md:h-[24rem] xl:w-3/5 xl:h-[36rem]" />
           )}

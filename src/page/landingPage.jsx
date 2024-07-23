@@ -7,7 +7,8 @@ import CardGrid from '../components/card'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCoffee, faAppleAlt, faCheckCircle } from '@fortawesome/free-solid-svg-icons';
 import test from '../assets/videos/test.mp4'
-import maps from '../assets/images/maps.jpg'
+import admin from '../assets/images/PETA-ADMINISTRASI.png'
+import data from '../assets/images/PETA-DATA-PENDUDUK.png'
 import Maps from '../components/maps'
 import expoFix from '../assets/videos/expoFix.mp4'
 import atma from '../assets/videos/atma.mp4'
@@ -17,7 +18,7 @@ const LandingPage  = () => {
             <Navbar />
                 <VideoCard src={"https://www.youtube.com/embed/QzAKRzz7Lvk?si=o__p21Vuiy1GYv-7"} type='video' backgroundVideo={expoFix} heading={'VIDEO PROFILE PADUKUHAN PELEM'} style={{color: '#FF8C00'}}/>
                 <br />
-                <div className='relative w-full h-[134rem] md:h-[72rem] xl:h-[56rem] flex-col align-middle justify-center pb-10 xl:py-24 bg-black bg-opacity-50'>
+                <div className='relative w-full h-fit md:h-fit xl:h-fit flex-col align-middle justify-center pb-10 xl:py-24 bg-black bg-opacity-50'>
                     <video
                         autoPlay
                         loop
@@ -51,7 +52,7 @@ const LandingPage  = () => {
                     <div className='relative z-10 '>
 
                         <h1 className='text-xl pt-5 text-center font-bold pb-5 md:text-2xl xl:text-3xl xl:pb-24' style={{ color: '#DAD3BE' }}>LOKASI UMKM PADUKUAN PELEM</h1>
-                        <div className='w-full h-full grid grid-cols-1 md:grid-cols-2 justify-center items-center md:h-[36rem] xl:h-[56rem]'>
+                        <div className='w-full h-fit grid grid-cols-1 md:grid-cols-2 justify-center items-center md:h-[36rem] xl:h-fit'>
                             {/* <Maps src='https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d987.375073573984!2d110.7112472!3d-8.1522427!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7bb9003e9f8989%3A0x493d0047f011c7a3!2sTempe%20Dangsul%2C%20Pelem%2C%20Jepitu!5e0!3m2!1sid!2sid!4v1720316969527!5m2!1sid!2sid' 
                             head={'TEMPE DANGSUL'} desc={'Merupakan salah satu UMKM pembuatan tempe di Padukuhan Pelem'}/> */}
                             <Maps src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.519572119302!2d110.7114201!3d-8.150290199999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7bb900577d189b%3A0xafd979612f5d759c!2sBiyyu%20Giling%20Tepung%20Beras%20%26%20Jagung!5e0!3m2!1sid!2sid!4v1720320108904!5m2!1sid!2sid'
@@ -60,11 +61,14 @@ const LandingPage  = () => {
                             head={'KARIN SNACK'} desc={'Merupakan salah satu UMKM pembuatan Snack di Padukuhan Pelem'}/>
                             <Maps src='https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15797.96583216201!2d110.7165156!3d-8.1531375!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7bc7004e6d65db%3A0xabdab527ccd1ed43!2sSnack%20Bu%20Santi!5e0!3m2!1sen!2sid!4v1721542142037!5m2!1sen!2sid' 
                             head={'SNACK BU SANTI'} desc={'Merupakan salah satu UMKM pembuatan Snack di Padukuhan Pelem'}/>
+
                         </div>
                     </div>
                 </div>
                 <br/>
-                <VideoCard type='foto' src={maps} backgroundVideo={expoFix} heading={'PETA POTENSI TANAH PADUKUAN PELEM'} style={{color: '#DAD3BE'}}/>
+                <VideoCard type='vertical' src={data} backgroundVideo={expoFix} heading={'PETA DATA PENDUDUK PADUKUAN PELEM'} style={{color: '#DAD3BE'}}/>
+                <br />
+                <VideoCard type='foto' src={admin} backgroundVideo={expoFix} heading={'PETA ADMINISTRASI DAN POTENSI LAHAN PADUKUAN PELEM'} style={{color: '#DAD3BE'}}/>
         </div>
     );
 }
