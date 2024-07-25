@@ -6,17 +6,23 @@ import Card from '../components/card'
 import CardGrid from '../components/card'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCoffee, faAppleAlt, faCheckCircle } from '@fortawesome/free-solid-svg-icons';
-import test from '../assets/videos/test.mp4'
+import Maps from '../components/maps'
+
+//maps assets
 import admin from '../assets/images/PETA-ADMINISTRASI.png'
 import data from '../assets/images/PETA-DATA-PENDUDUK.png'
-import Maps from '../components/maps'
-import expoFix from '../assets/videos/expoFix.mp4'
-import atma from '../assets/videos/atma.mp4'
+
+//video assets
+import bg_1 from '../assets/videos/BG WEB 1.mp4'
+import bg_2 from '../assets/videos/BG WEB 2.mp4'
+import bg_3 from '../assets/videos/BG WEB 3.mp4'
+import bg_4 from '../assets/videos/BG WEB 4.mp4'
+import bg_5 from '../assets/videos/BG WEB 5.mp4'
 const LandingPage  = () => {
     return (
         <div className='relative w-full h-full'>
             <Navbar />
-                <VideoCard src={"https://www.youtube.com/embed/QzAKRzz7Lvk?si=o__p21Vuiy1GYv-7"} type='video' backgroundVideo={expoFix} heading={'VIDEO PROFILE PADUKUHAN PELEM'} style={{color: '#FF8C00'}}/>
+                <VideoCard src={"https://www.youtube.com/embed/QzAKRzz7Lvk?si=o__p21Vuiy1GYv-7"} type='video' backgroundVideo={bg_1} heading={'VIDEO PROFILE PADUKUHAN PELEM'} style={{color: '#FF8C00'}}/>
                 <br />
                 <div className='relative w-full h-fit md:h-fit xl:h-fit flex-col align-middle justify-center pb-10 xl:py-24 bg-black bg-opacity-50'>
                     <video
@@ -26,7 +32,7 @@ const LandingPage  = () => {
                         playsInline
                         className='absolute top-0 left-0 w-full h-full object-cover z-[-1] '
                     >
-                        <source src={expoFix} type='video/mp4'/>
+                        <source src={bg_2} type='video/mp4'/>
                         Your browser does not support the video tag.
                     </video>
                     <div className='relative z-10'>
@@ -46,7 +52,7 @@ const LandingPage  = () => {
                         playsInline
                         className='absolute top-0 left-0 w-full h-full object-cover z-[-1]'
                     >
-                        <source src={atma} type='video/mp4' />
+                        <source src={bg_3} type='video/mp4' />
                         Your browser does not support the video tag.
                     </video>
                     <div className='relative z-10 '>
@@ -66,9 +72,9 @@ const LandingPage  = () => {
                     </div>
                 </div>
                 <br/>
-                <VideoCard type='vertical' src={data} backgroundVideo={expoFix} heading={'PETA DATA PENDUDUK PADUKUAN PELEM'} style={{color: '#DAD3BE'}}/>
+                <VideoCard type='vertical' src={data} backgroundVideo={bg_4} heading={'PETA DATA PENDUDUK PADUKUAN PELEM'} style={{color: '#DAD3BE'}}/>
                 <br />
-                <VideoCard type='foto' src={admin} backgroundVideo={expoFix} heading={'PETA ADMINISTRASI DAN POTENSI LAHAN PADUKUAN PELEM'} style={{color: '#DAD3BE'}}/>
+                <VideoCard type='foto' src={admin} backgroundVideo={bg_5} heading={'PETA ADMINISTRASI DAN POTENSI LAHAN PADUKUAN PELEM'} style={{color: '#DAD3BE'}}/>
         </div>
     );
 }

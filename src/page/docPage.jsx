@@ -14,7 +14,11 @@ import img9 from '../assets/images/dummy/9.jpeg';
 import img10 from '../assets/images/dummy/10.jpeg';
 import img11 from '../assets/images/dummy/11.jpeg';
 import img12 from '../assets/images/dummy/12.jpeg';
-
+import img13 from '../assets/images/dummy/13.jpeg';
+import img14 from '../assets/images/dummy/14.jpeg';
+import img15 from '../assets/images/dummy/15.jpeg';
+import img16 from '../assets/images/dummy/16.jpeg';
+import img17 from '../assets/images/dummy/17.jpeg';
 export const images = [
     img1,
     img2,
@@ -28,6 +32,11 @@ export const images = [
     img10,
     img11,
     img12,
+    img13,
+    img14,
+    img15,
+    img16,
+    img17,
 ];
 
 export default function DocPage() {
